@@ -5,11 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d0ea520-6abe-499d-b983-9ea109e3af3c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AgroLink.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/UserApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/dto/JwtResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/dto/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/dto/UserProfileDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/dto/UserRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/enums/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/exceptions/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/exceptions/UserNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/AuthUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/CorsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/CustomAccessDeniedHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/CustomAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/CustomUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/filter/AppMaintenanceFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/filter/JwtFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/service/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/service/TwoFactorUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/resources/application-maintenance.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/src/test/java/com/AgroLink/User/UserApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +47,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -25,12 +55,12 @@
     &quot;assignee&quot;: &quot;souvik-mohanty&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/souvik-mohanty/AgroLink.git&quot;,
-    &quot;accountId&quot;: &quot;7d5b1321-7f49-49c6-a5ca-ceac65f5318b&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/souvik-mohanty/AgroLink.git",
+    "accountId": "93fb40d9-1675-45e2-8050-b42762282a56"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -51,8 +81,8 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/SANU/Desktop/spring course/AgroLink",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/codes/project/published/Agrolink",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,6 +139,7 @@
       <workItem from="1753711783137" duration="934000" />
       <workItem from="1753712890891" duration="751000" />
       <workItem from="1753713656859" duration="103000" />
+      <workItem from="1753715489844" duration="227000" />
     </task>
     <servers />
   </component>
