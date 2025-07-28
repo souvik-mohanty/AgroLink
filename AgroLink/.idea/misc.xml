@@ -19,7 +19,6 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/frontendRunner/pom.xml" />
-        <option value="$PROJECT_DIR$/order/pom.xml" />
       </set>
     </option>
   </component>

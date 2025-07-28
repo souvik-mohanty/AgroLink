@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="User-service" />
         <module name="product-service" />
+        <module name="Order-service" />
         <module name="notification-service" />
         <module name="advisory-service" />
         <module name="admin-service" />
@@ -26,7 +27,6 @@
     <bytecodeTargetLevel>
       <module name="FrontendRunner" target="21" />
       <module name="frontendRunner-service" target="21" />
-      <module name="Order-service" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
