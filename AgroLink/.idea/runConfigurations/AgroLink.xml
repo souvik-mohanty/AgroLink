@@ -1,7 +1,10 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="AgroLink" type="CompoundRunConfigurationType">
-    <toRun name="OrderApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="AdminApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="AdvisoryApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="NotificationApplication" type="SpringBootApplicationConfigurationType" />
     <toRun name="UserApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="WarehouseApplication" type="SpringBootApplicationConfigurationType" />
     <toRun name="productApplication" type="SpringBootApplicationConfigurationType" />
     <method v="2" />
   </configuration>
