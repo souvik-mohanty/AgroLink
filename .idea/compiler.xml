@@ -9,6 +9,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="product-service" />
         <module name="product" />
         <module name="User" />
         <module name="advisory" />
@@ -26,6 +27,7 @@
       <module name="logistic" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="product" options="-parameters" />
+      <module name="product-service" options="-parameters" />
     </option>
   </component>
 </project>
