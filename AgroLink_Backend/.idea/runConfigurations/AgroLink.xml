@@ -2,6 +2,7 @@
   <configuration default="false" name="AgroLink" type="CompoundRunConfigurationType">
     <toRun name="AdminApplication" type="SpringBootApplicationConfigurationType" />
     <toRun name="AdvisoryApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="FrontendRunnerApplication" type="SpringBootApplicationConfigurationType" />
     <toRun name="NotificationApplication" type="SpringBootApplicationConfigurationType" />
     <toRun name="OrderApplication" type="SpringBootApplicationConfigurationType" />
     <toRun name="UserApplication" type="SpringBootApplicationConfigurationType" />

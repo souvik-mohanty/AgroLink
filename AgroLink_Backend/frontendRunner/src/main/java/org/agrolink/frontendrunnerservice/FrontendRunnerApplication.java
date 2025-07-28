@@ -18,7 +18,11 @@ public class FrontendRunnerApplication {
 
         // Resolve frontend path relative to backend location
         Path currentDir = Paths.get("").toAbsolutePath();
-        Path frontendPath = currentDir.getParent().resolve("AgroLink_FrontEnd");
+        Path frontendPath = currentDir.getParent().resolve("AgroLink_FrontEnd").resolve("AgroLink");
+        if (!frontendPath.toFile().exists()) {
+            System.err.println("Frontend path does not exist: " + frontendPath);
+            return;
+        }
 
         System.out.println("Resolved frontend path: " + frontendPath);
 
