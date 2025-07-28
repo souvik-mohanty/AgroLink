@@ -1,0 +1,79 @@
+.profile-page {
+  position: relative;
+  height: 100vh;
+  background-color: #121212; /* 🌑 Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e0e0e0; /* Light text */
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.03); /* Faint white for dark bg */
+  font-weight: bold;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.profile-card {
+  position: relative;
+  z-index: 2;
+  background: #1e1e1e; /* Dark card */
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  max-width: 600px;
+  width: 100%;
+}
+
+.profile-card h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+  color: #ddd;
+}
+
+.edit-btn {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 10px 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn:hover {
+  background-color: #388e3c;
+}
+
+.edit-icon {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #4caf50;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.edit-icon:hover {
+  color: #388e3c;
+}
+

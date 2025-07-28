@@ -1,0 +1,217 @@
+/* ===== Root Theme Variables ===== */
+:root {
+  --bg-color: #f4f8f3;
+  --text-color: #111;
+  --primary: #2e7d32;
+  --secondary-bg: #e8f5e9;
+  --card-bg: #f1f8e9;
+  --cta-text: white;
+  --cta-bg: #2e7d32;
+  --footer-bg: #2e7d32;
+  --link-hover: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #f0f0f0;
+  --primary: #81c784;
+  --secondary-bg: #2a2a2a;
+  --card-bg: #333;
+  --cta-text: #000;
+  --cta-bg: #81c784;
+  --footer-bg: #222;
+  --link-hover: #81c784;
+}
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  /* background-color: var(--bg-color); */
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ===== Navbar ===== */
+.landing-navbar {
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links .btn {
+  background-color: white;
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* ===== Hero ===== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: var(--secondary-bg);
+}
+
+.hero-content {
+  flex: 1 1 50%;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+
+.hero-image {
+  flex: 1 1 20%;
+  text-align: center;
+  margin-right: 40px;
+  width: 200px;
+  height: 491px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===== Features ===== */
+.features {
+  padding: 3rem 2rem;
+  background-color: var(--bg-color);
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+  color: var(--text-color);
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.feature-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: var(--footer-bg);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #cce7cc;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+/* Base button style */
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #2d6a4f;
+  background-color: white;
+  color: #2d6a4f;
+}
+
+/* Selected/active button is green with white text */
+.cta-button.selected {
+  background-color: #2d6a4f;
+  color: white;
+}
+
+/* Hover effect */
+.cta-button:hover {
+  opacity: 0.9;
+}
