@@ -4,42 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d0ea520-6abe-499d-b983-9ea109e3af3c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/UserApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/dto/JwtResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/dto/LoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/dto/UserProfileDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/dto/UserRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/enums/UserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/exceptions/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/exceptions/UserNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/AuthUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/CustomAccessDeniedHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/CustomAuthenticationEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/CustomUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/filter/AppMaintenanceFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/security/filter/JwtFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/service/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/service/TwoFactorUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/com/AgroLink/User/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/resources/application-maintenance.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/test/java/com/AgroLink/User/UserApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="8d0ea520-6abe-499d-b983-9ea109e3af3c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,12 +20,12 @@
     &quot;assignee&quot;: &quot;souvik-mohanty&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/souvik-mohanty/AgroLink.git",
-    "accountId": "93fb40d9-1675-45e2-8050-b42762282a56"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/souvik-mohanty/AgroLink.git&quot;,
+    &quot;accountId&quot;: &quot;93fb40d9-1675-45e2-8050-b42762282a56&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -73,28 +38,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.UserApplication.executor": "Run",
-    "Maven.User-service [clean].executor": "Run",
-    "Maven.User-service [install].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/codes/project/published/Agrolink",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.UserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.User-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.User-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/codes/project/published/Agrolink&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean " />
@@ -140,6 +105,7 @@
       <workItem from="1753712890891" duration="751000" />
       <workItem from="1753713656859" duration="103000" />
       <workItem from="1753715489844" duration="227000" />
+      <workItem from="1753727611543" duration="37000" />
     </task>
     <servers />
   </component>
