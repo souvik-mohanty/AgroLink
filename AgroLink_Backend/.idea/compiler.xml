@@ -14,6 +14,7 @@
         <module name="notification-service" />
         <module name="advisory-service" />
         <module name="admin-service" />
+        <module name="gateway" />
       </profile>
       <profile name="Annotation profile for warehouse" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -36,6 +37,7 @@
       <module name="admin-service" options="-parameters" />
       <module name="advisory-service" options="-parameters" />
       <module name="frontendRunner-service" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="notification-service" options="-parameters" />
       <module name="product-service" options="-parameters" />
       <module name="warehouse-service" options="-parameters" />
