@@ -9,21 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="User-service" />
         <module name="frontendRunner-service" />
+        <module name="warehouse-service" />
         <module name="product-service" />
         <module name="Order-service" />
         <module name="notification-service" />
         <module name="advisory-service" />
         <module name="admin-service" />
         <module name="gateway" />
-      </profile>
-      <profile name="Annotation profile for warehouse" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
-        <module name="warehouse-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

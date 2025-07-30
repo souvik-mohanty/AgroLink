@@ -2,6 +2,14 @@ server:
     port: 8086
 
 spring:
+    application:
+        name: advisory-service
+
     data:
         mongodb:
-        uri: mongodb://localhost:27017/agrolink_advisory
+            uri: mongodb://localhost:27017/agrolink_advisory
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
