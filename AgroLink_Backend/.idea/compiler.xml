@@ -10,6 +10,7 @@
         <module name="User-service" />
         <module name="frontendRunner-service" />
         <module name="warehouse-service" />
+        <module name="eureka" />
         <module name="product-service" />
         <module name="Order-service" />
         <module name="notification-service" />
@@ -28,6 +29,7 @@
       <module name="User-service" options="-parameters" />
       <module name="admin-service" options="-parameters" />
       <module name="advisory-service" options="-parameters" />
+      <module name="eureka" options="-parameters" />
       <module name="frontendRunner-service" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="notification-service" options="-parameters" />

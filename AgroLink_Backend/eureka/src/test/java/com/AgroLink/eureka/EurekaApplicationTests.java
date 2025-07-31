@@ -1,10 +1,10 @@
-package com.AgroLink.gateway;
+package com.AgroLink.eureka;
 
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GatewayApplicationTests {
+class EurekaApplicationTests {
 
 	@Test
 	void contextLoads() {

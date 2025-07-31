@@ -3,66 +3,68 @@ server:
 
 spring:
   application:
-    name: api-gateway
-
+    name: gateway-service
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
-      routes:
-        - id: user-service-auth
-          uri: lb://user-service
-          predicates:
-            - Path=/api/auth/**
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+          routes:
+            - id: user-service-auth
+              uri: lb://user-service
+              predicates:
+                - Path=/api/auth/**
 
-        - id: user-service-users
-          uri: lb://user-service
-          predicates:
-            - Path=/api/users/**
+            - id: user-service-users
+              uri: lb://user-service
+              predicates:
+                - Path=/api/users/**
 
-        - id: admin-service
-          uri: lb://admin-service
-          predicates:
-            - Path=/admin/**
+            - id: admin-service
+              uri: lb://admin-service
+              predicates:
+                - Path=/admin/**
 
-        - id: product-service-products
-          uri: lb://product-service
-          predicates:
-            - Path=/api/products/**
+            - id: product-service-products
+              uri: lb://product-service
+              predicates:
+                - Path=/api/products/**
 
-        - id: product-service-cart
-          uri: lb://product-service
-          predicates:
-            - Path=/api/products/cart/**
+            - id: product-service-cart
+              uri: lb://product-service
+              predicates:
+                - Path=/api/products/cart/**
 
-        - id: order-service
-          uri: lb://order-service
-          predicates:
-            - Path=/orders/**
+            - id: order-service
+              uri: lb://order-service
+              predicates:
+                - Path=/orders/**
 
-        - id: advisory-service
-          uri: lb://advisory-service
-          predicates:
-            - Path=/api/advisory/**
+            - id: advisory-service
+              uri: lb://advisory-service
+              predicates:
+                - Path=/api/advisory/**
 
-        - id: query-service
-          uri: lb://query-service
-          predicates:
-            - Path=/api/query/**
+            - id: query-service
+              uri: lb://query-service
+              predicates:
+                - Path=/api/query/**
 
-        - id: notification-service
-          uri: lb://notification-service
-          predicates:
-            - Path=/api/notifications/**
+            - id: notification-service
+              uri: lb://notification-service
+              predicates:
+                - Path=/api/notifications/**
 
-        - id: warehouse-service
-          uri: lb://warehouse-service
-          predicates:
-            - Path=/api/warehouse/**
+            - id: warehouse-service
+              uri: lb://warehouse-service
+              predicates:
+                - Path=/api/warehouse/**
 
 eureka:
   client:
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+

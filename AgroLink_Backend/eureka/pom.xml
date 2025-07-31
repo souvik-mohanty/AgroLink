@@ -7,49 +7,29 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.4</version>
+		<version>3.1.8</version>
 		<relativePath/>
 	</parent>
 
 	<groupId>com.agrolink</groupId>
-	<artifactId>gateway</artifactId>
+	<artifactId>eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>gateway</name>
-	<description>AgroLink API Gateway</description>
+	<name>Eureka Server</name>
+	<description>Eureka Discovery Server for AgroLink</description>
 
 	<properties>
 		<java.version>21</java.version>
-		<spring-cloud.version>2023.0.1</spring-cloud.version>
+		<spring-cloud.version>2022.0.4</spring-cloud.version>
 	</properties>
 
 	<dependencies>
-		<!-- Spring Cloud Gateway -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-gateway</artifactId>
-		</dependency>
-
-		<!-- Eureka Client -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.11.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-test</artifactId>
-			<scope>test</scope>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 	</dependencies>
 
