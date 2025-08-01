@@ -16,11 +16,12 @@
         <module name="notification-service" />
         <module name="advisory-service" />
         <module name="admin-service" />
-        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="eureka-server" target="21" />
       <module name="FrontendRunner" target="21" />
+      <module name="gateway" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -30,6 +31,7 @@
       <module name="admin-service" options="-parameters" />
       <module name="advisory-service" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="frontendRunner-service" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="notification-service" options="-parameters" />

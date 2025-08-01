@@ -34,12 +34,6 @@
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 
-		<!-- Eureka Client -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-
 		<!-- Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
