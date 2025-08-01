@@ -14,8 +14,7 @@ import java.time.LocalDateTime;
 public class Order {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
 
     private String productId;
     private String buyerId;

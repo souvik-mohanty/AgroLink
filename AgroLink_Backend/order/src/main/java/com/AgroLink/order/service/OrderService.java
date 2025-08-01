@@ -1,5 +1,6 @@
 package com.AgroLink.order.service;
 
+import com.AgroLink.order.config.NanoIdGenerator;
 import com.AgroLink.order.dto.OrderRequest;
 import com.AgroLink.order.dto.PaymentResponse;
 import com.AgroLink.order.enums.OrderStatus;
@@ -17,6 +18,7 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
     private final RazorpayClient razorpayClient;
+    private final NanoIdGenerator nanoIdGenerator;
 
     public PaymentResponse createOrder(OrderRequest request) throws RazorpayException {
         // Convert amount to paise (multiply by 100 and round to nearest integer)
@@ -33,6 +35,7 @@ public class OrderService {
 
         // Save order in database
         Order order = new Order();
+        order.setId(nanoIdGenerator.generateOrderId());
         order.setProductId(request.getProductId());
         order.setBuyerId(request.getBuyerId());
         order.setQuantity(request.getQuantity());
