@@ -13,6 +13,7 @@
         <module name="eureka" />
         <module name="product-service" />
         <module name="Order-service" />
+        <module name="ServiceRegistry" />
         <module name="notification-service" />
         <module name="advisory-service" />
         <module name="admin-service" />
@@ -27,6 +28,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Order-service" options="-parameters" />
+      <module name="ServiceRegistry" options="-parameters" />
       <module name="User-service" options="-parameters" />
       <module name="admin-service" options="-parameters" />
       <module name="advisory-service" options="-parameters" />
