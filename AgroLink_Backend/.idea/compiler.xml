@@ -18,11 +18,19 @@
         <module name="advisory-service" />
         <module name="admin-service" />
       </profile>
+      <profile name="Annotation profile for gateway" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="gateway" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-server" target="21" />
       <module name="FrontendRunner" target="21" />
-      <module name="gateway" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
