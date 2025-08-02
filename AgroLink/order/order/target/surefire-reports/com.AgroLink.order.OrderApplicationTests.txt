@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.AgroLink.order.OrderApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.043 s -- in com.AgroLink.order.OrderApplicationTests

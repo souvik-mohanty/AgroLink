@@ -5,6 +5,7 @@
     <toRun name="FrontendRunnerApplication" type="SpringBootApplicationConfigurationType" />
     <toRun name="NotificationApplication" type="SpringBootApplicationConfigurationType" />
     <toRun name="OrderApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="ServiceRegistry" type="SpringBootApplicationConfigurationType" />
     <toRun name="UserApplication" type="SpringBootApplicationConfigurationType" />
     <toRun name="WarehouseApplication" type="SpringBootApplicationConfigurationType" />
     <toRun name="productApplication" type="SpringBootApplicationConfigurationType" />
