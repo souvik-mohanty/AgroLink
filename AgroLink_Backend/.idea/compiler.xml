@@ -10,13 +10,12 @@
         <module name="User-service" />
         <module name="frontendRunner-service" />
         <module name="warehouse-service" />
-        <module name="eureka" />
         <module name="product-service" />
         <module name="Order-service" />
         <module name="ServiceRegistry" />
+        <module name="admin-service" />
         <module name="notification-service" />
         <module name="advisory-service" />
-        <module name="admin-service" />
       </profile>
       <profile name="Annotation profile for gateway" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -28,10 +27,6 @@
         <module name="gateway" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="eureka-server" target="21" />
-      <module name="FrontendRunner" target="21" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -40,8 +35,6 @@
       <module name="User-service" options="-parameters" />
       <module name="admin-service" options="-parameters" />
       <module name="advisory-service" options="-parameters" />
-      <module name="eureka" options="-parameters" />
-      <module name="eureka-server" options="-parameters" />
       <module name="frontendRunner-service" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="notification-service" options="-parameters" />

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AgroLink.iml" filepath="$PROJECT_DIR$/.idea/AgroLink.iml" />
-      <module fileurl="file://$PROJECT_DIR$/admin/admin-service.iml" filepath="$PROJECT_DIR$/admin/admin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AgroLink_Backend.iml" filepath="$PROJECT_DIR$/.idea/AgroLink_Backend.iml" />
     </modules>
   </component>
 </project>
