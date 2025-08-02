@@ -2,6 +2,8 @@ spring:
   application:
     name: User-service
 
+server:
+  port: 8081
 #  profiles:
 #    active: maintenance
 
