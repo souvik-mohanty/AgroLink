@@ -3,7 +3,7 @@ import { getUserid } from './userApi';
 
 // Axios instance with correct baseURL
 const API = axios.create({
-  baseURL: 'http://localhost:8082/api/products',
+  baseURL: 'http://localhost:8089/products',
   headers: {
     'Content-Type': 'application/json',
   },

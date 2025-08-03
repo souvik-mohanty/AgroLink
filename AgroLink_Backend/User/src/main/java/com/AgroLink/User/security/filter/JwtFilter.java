@@ -60,8 +60,14 @@ public class JwtFilter extends OncePerRequestFilter {
         chain.doFilter(request, response);
     }
 
+    /**
+     * Corrected method to check for public paths.
+     * The gateway rewrites the URL, so the prefix `user` is removed.
+     * @param path The incoming request URI.
+     * @return true if the path is a public endpoint, false otherwise.
+     */
     private boolean isPublicPath(String path) {
-        return path.equals("user/api/auth/login") || path.equals("user/api/auth/register");
+        return path.startsWith("/api/auth/login") || path.startsWith("/api/auth/register");
     }
 
     private String getTokenFromRequest(HttpServletRequest request) {
