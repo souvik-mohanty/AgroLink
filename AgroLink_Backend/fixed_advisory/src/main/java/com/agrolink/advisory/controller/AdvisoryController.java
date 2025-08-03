@@ -4,6 +4,7 @@ import com.agrolink.advisory.dto.AdvisoryContentRequest;
 import com.agrolink.advisory.model.AdvisoryContent;
 import com.agrolink.advisory.service.AdvisoryService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,6 +15,12 @@ import java.util.List;
 public class AdvisoryController {
 
     private final AdvisoryService advisoryService;
+
+    @GetMapping
+    public ResponseEntity<String> hello() {
+        return ResponseEntity.ok("Hello from Advisory Service Advisory");
+    }
+
 
     @PostMapping("/post")
     public AdvisoryContent postContent(@RequestBody AdvisoryContentRequest request) {

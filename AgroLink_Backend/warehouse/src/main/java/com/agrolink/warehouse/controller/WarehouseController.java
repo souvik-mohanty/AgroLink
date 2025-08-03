@@ -4,6 +4,7 @@ import com.agrolink.warehouse.dto.WarehouseRequest;
 import com.agrolink.warehouse.dto.WarehouseResponse;
 import com.agrolink.warehouse.service.WarehouseService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,6 +15,11 @@ import java.util.List;
 public class WarehouseController {
 
     private final WarehouseService service;
+
+    @GetMapping
+    public ResponseEntity<String> hello() {
+        return ResponseEntity.ok("Hello from WareHouse Service");
+    }
 
     @PostMapping("/store")
     public WarehouseResponse storeCrop(@RequestBody WarehouseRequest request) {

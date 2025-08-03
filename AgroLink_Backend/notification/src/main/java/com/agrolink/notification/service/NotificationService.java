@@ -41,6 +41,7 @@ public class NotificationService {
     }
 
     private String sendEmail(NotificationRequest request) {
+        System.out.println("sending email");
         try {
             SimpleMailMessage message = new SimpleMailMessage();
             message.setTo(request.getRecipient());
@@ -48,6 +49,7 @@ public class NotificationService {
             message.setText(request.getMessage());
             mailSender.send(message);
             return "Email sent successfully.";
+
         } catch (Exception e) {
             return "Failed to send email: " + e.getMessage();
         }

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 //Sourav: - Cart Controller class to add and other options
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/products/cart")
+@RequestMapping("/products/cart")
 public class CartController {
 
     private final CartService cartService;

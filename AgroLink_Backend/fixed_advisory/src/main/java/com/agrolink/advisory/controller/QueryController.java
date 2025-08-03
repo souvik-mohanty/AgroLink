@@ -4,6 +4,7 @@ import com.agrolink.advisory.dto.QueryRequest;
 import com.agrolink.advisory.model.FarmerQuery;
 import com.agrolink.advisory.service.QueryService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,6 +15,11 @@ import java.util.List;
 public class QueryController {
 
     private final QueryService queryService;
+
+    @GetMapping
+    public ResponseEntity<String> hello() {
+        return ResponseEntity.ok("Hello from Advisory Service Query");
+    }
 
     @PostMapping("/submit")
     public FarmerQuery submitQuery(@RequestBody QueryRequest request) {

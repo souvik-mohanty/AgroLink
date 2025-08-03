@@ -4,7 +4,6 @@ server:
 spring:
     application:
         name: advisory-service
-
     data:
         mongodb:
             uri: mongodb://localhost:27017/agrolink_advisory
@@ -18,3 +17,13 @@ eureka:
     instance:
         prefer-ip-address: true
         hostname: localhost
+        health-check-url-path: /actuator/health
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: health,info
+    endpoint:
+        health:
+            show-details: always

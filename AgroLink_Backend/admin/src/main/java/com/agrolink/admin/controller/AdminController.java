@@ -15,13 +15,18 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("/api/admin")
 @RequiredArgsConstructor
 public class AdminController {
 
     private final AdminService adminService;
     private final ReportService reportService;
     private final UserRepository userRepository;
+
+    @GetMapping
+    public ResponseEntity<String> hello() {
+        return ResponseEntity.ok("Hello from Admin Service");
+    }
 
     @GetMapping("/users")
     public List<User> getAllUsers() {
