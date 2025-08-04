@@ -1,0 +1,10 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: cart-service
+  config:
+    import: configserver:http://localhost:8090
+  profiles:
+    active:

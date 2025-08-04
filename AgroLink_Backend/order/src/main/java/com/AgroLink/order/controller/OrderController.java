@@ -17,7 +17,6 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    // ➕ Create new order
     @PostMapping
     public ResponseEntity<String> createOrder(@RequestBody OrderRequest order) {
         try {

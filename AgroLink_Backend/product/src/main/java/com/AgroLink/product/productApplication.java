@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
-@EnableFeignClients(basePackages = "com.AgroLink.product.feign")
+@EnableFeignClients
 public class productApplication {
     public static void main(String[] args) {
         SpringApplication.run(productApplication.class, args);

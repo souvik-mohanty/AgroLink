@@ -8,12 +8,7 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/agrolink
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-    register-with-eureka: true
-    fetch-registry: true
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
+  config:
+    import: configserver:http://localhost:8090
+  profiles:
+    active:

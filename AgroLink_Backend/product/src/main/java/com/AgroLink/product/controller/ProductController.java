@@ -2,6 +2,8 @@ package com.AgroLink.product.controller;
 
 import com.AgroLink.product.dto.ProductRequest;
 import com.AgroLink.product.dto.ProductResponse;
+import com.AgroLink.product.feign.AdminClient;
+import com.AgroLink.product.feign.OrderClient;
 import com.AgroLink.product.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +18,18 @@ import java.util.List;
 public class ProductController {
 
     private final ProductService productService;
+    private final AdminClient adminClient;
+    private final OrderClient orderClient;
+
+    @GetMapping("/admin")
+    public String admin(){
+        return adminClient.adminHello();
+    }
+
+    @GetMapping("/order")
+    public String order(){
+        return orderClient.checkHealth();
+    }
 
     @PostMapping
     public ProductResponse addProduct(@RequestBody ProductRequest request) {

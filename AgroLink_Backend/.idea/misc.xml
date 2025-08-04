@@ -14,6 +14,8 @@
         <option value="$PROJECT_DIR$/fixed_advisory/pom.xml" />
         <option value="$PROJECT_DIR$/frontendRunner/pom.xml" />
         <option value="$PROJECT_DIR$/ServiceRegistry/pom.xml" />
+        <option value="$PROJECT_DIR$/ConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/Cart/pom.xml" />
       </list>
     </option>
   </component>
