@@ -8,3 +8,12 @@ spring:
     import: configserver:http://localhost:8090
   profiles:
     active:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/agrolink
+
+management:
+  endpoint:
+    web:
+        exposure:
+            include: health

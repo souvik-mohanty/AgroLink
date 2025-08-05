@@ -1,6 +1,6 @@
-package com.AgroLink.product.model;
+package org.agrolink.cart.model;
 
-import io.netty.handler.codec.socksx.v4.Socks4CommandRequest;
+
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

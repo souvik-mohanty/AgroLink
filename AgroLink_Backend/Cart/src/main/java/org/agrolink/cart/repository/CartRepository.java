@@ -1,6 +1,7 @@
-package com.AgroLink.product.repository;
+package org.agrolink.cart.repository;
 
-import com.AgroLink.product.model.Cart;
+
+import org.agrolink.cart.model.Cart;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;

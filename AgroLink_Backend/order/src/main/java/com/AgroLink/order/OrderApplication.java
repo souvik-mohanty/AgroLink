@@ -15,3 +15,8 @@ public class OrderApplication {
 	}
 
 }
+
+// TODO: MAKE A ORDER SERVICE TO EXECUTE THE ORDER OF CART BUY OR A SINGLE PRODUCT
+// TODO: Implement Circuit breaker
+// TODO: Implement Rate Limiter
+// TODO: Implement Heart beat algo in eureka server

@@ -1,9 +1,10 @@
-package com.AgroLink.product.controller;
+package org.agrolink.cart.controller;
 
 
-import com.AgroLink.product.model.Cart;
-import com.AgroLink.product.service.CartService;
+
 import lombok.RequiredArgsConstructor;
+import org.agrolink.cart.dto.CartResponse;
+import org.agrolink.cart.service.CartService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,25 +12,25 @@ import org.springframework.web.bind.annotation.*;
 //Sourav: - Cart Controller class to add and other options
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/products/cart")
+@RequestMapping("/cart")
 public class CartController {
 
     private final CartService cartService;
 
-    @GetMapping("/{userId}")
-    public ResponseEntity<Cart> getCart(@PathVariable String userId) {
-        return ResponseEntity.ok(cartService.getCart(userId));
+    @GetMapping
+    public ResponseEntity<CartResponse> getCartByUserId(@RequestParam String userId) {
+        return ResponseEntity.ok(cartService.getCartByUserId(userId));
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Cart> addToCart(@RequestParam String userId,
+    public ResponseEntity<CartResponse> addToCart(@RequestParam String userId,
                                           @RequestParam String productId,
                                           @RequestParam int quantity) {
         return ResponseEntity.ok(cartService.addToCart(userId, productId, quantity));
     }
 
     @DeleteMapping("/remove")
-    public ResponseEntity<Cart> removeFromCart(@RequestParam String userId,
+    public ResponseEntity<CartResponse> removeFromCart(@RequestParam String userId,
                                                @RequestParam String productId,
                                                @RequestParam(required = false) Integer quantity){
         return ResponseEntity.ok(cartService.removeFromCart(userId, productId,quantity));

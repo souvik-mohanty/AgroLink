@@ -16,4 +16,3 @@ public class CartApplication {
 
 }
 
-// TODO: Add a REST controller to handle cart operations

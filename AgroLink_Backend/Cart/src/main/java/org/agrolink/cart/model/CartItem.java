@@ -1,4 +1,4 @@
-package com.AgroLink.product.model;
+package org.agrolink.cart.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
