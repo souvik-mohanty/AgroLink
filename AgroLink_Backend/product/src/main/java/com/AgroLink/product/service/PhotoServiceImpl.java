@@ -35,4 +35,10 @@ public class PhotoServiceImpl implements PhotoService {
         return photoRepository.findById(id)
                 .orElseThrow(() -> new PhotoNotFoundException("Photo not found with id: " + id));
     }
+
+    @Override
+    public void deletePhoto(String id) {
+        Photo photo = getPhoto(id); // This will throw PhotoNotFoundException if not found
+        photoRepository.delete(photo);
+    }
 }

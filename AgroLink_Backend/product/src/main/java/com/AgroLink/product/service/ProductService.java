@@ -73,18 +73,34 @@ public class ProductService {
         productRepository.deleteById(id);
     }
 
-    public ProductResponse updateProduct(String id, ProductRequest request) {
+    public ProductResponse updateProduct(String id, ProductRequest request, List<MultipartFile> newImages) throws IOException {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException("Cannot update. Product not found with id: " + id));
 
+        // 1. Delete old photos associated with the product
+        if (product.getPhotoIds() != null && !product.getPhotoIds().isEmpty()) {
+            product.getPhotoIds().forEach(photoService::deletePhoto);
+        }
+
+        // 2. Upload new photos and get their IDs
+        List<String> newPhotoIds = new ArrayList<>();
+        if (newImages != null && !newImages.isEmpty()) {
+            for (MultipartFile file : newImages) {
+                String photoId = photoService.addPhoto(file, product.getFarmerId());
+                newPhotoIds.add(photoId);
+            }
+        }
+
+        // 3. Update product details and photo IDs
         updateIfPresent(request.getName(), product::setName);
         updateIfPresent(request.getCategory(), product::setCategory);
         updateIfPresent(request.getQualityTag(), product::setQualityTag);
         updateIfPresent(request.getCropInfo(), product::setCropInfo);
         updateIfPresent(request.getPricePerUnit(), product::setPricePerUnit);
         updateIfPresent(request.getQuantityAvailable(), product::setQuantityAvailable);
-        updateIfPresent(request.getPhotoIds(), product::setPhotoIds);
+        product.setPhotoIds(newPhotoIds); // Set the new photo IDs
 
+        // 4. Save the updated product
         Product updatedProduct = productRepository.save(product);
         return mapToResponse(updatedProduct);
     }

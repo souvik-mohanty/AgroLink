@@ -43,9 +43,11 @@ public class ProductController {
         return productService.getProductPhoto(id);
     }
 
-    @PutMapping("/{id}")
-    public ProductResponse updateProduct(@PathVariable String id, @Valid @RequestBody ProductRequest request) {
-        return productService.updateProduct(id, request);
+    @PutMapping(value = "/{id}", consumes = { MediaType.MULTIPART_FORM_DATA_VALUE })
+    public ProductResponse updateProduct(@PathVariable String id,
+                                         @Valid @ModelAttribute ProductRequest request,
+                                         @RequestParam("images") List<MultipartFile> images) throws IOException {
+        return productService.updateProduct(id, request, images);
     }
 
     @DeleteMapping("/{id}")

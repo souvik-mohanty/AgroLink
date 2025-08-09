@@ -10,4 +10,6 @@ import java.io.IOException;
 public interface PhotoService {
     public String addPhoto(MultipartFile file, String uploaderId) throws IOException;
     public Photo getPhoto(String id);
+
+    void deletePhoto(String s);
 }
