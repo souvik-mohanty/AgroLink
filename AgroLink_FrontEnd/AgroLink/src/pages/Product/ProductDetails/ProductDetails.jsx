@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getProductById } from '../../../service/productApi';
+// Your API functions
+import { getProductById, getProductImgById } from '../../../service/productApi';
 import Navbar from '../../../components/Navbar/Navbar';
 import './ProductDetails.css';
 
@@ -10,17 +11,40 @@ const ProductDetails = () => {
   const [loadingBuy, setLoadingBuy] = useState(false); 
 
   useEffect(() => {
+    // This effect fetches the main product data
     getProductById(id)
       .then(res => setProduct(res.data))
       .catch(err => console.error(err));
   }, [id]);
 
+  useEffect(() => {
+    let objectUrl = null;
+    // This effect fetches an additional image based on the product
+    if (product) {
+      getProductImgById(product.id)
+        .then(res => {
+          objectUrl = URL.createObjectURL(res.data);
+          setProduct(prev => ({ 
+            ...prev, 
+            imageUrls: [objectUrl, ...(prev.imageUrls || [])] 
+          }));
+        })
+        .catch(err => console.error('Error fetching product image:', err));
+    }
+
+    // Cleanup function to prevent memory leaks
+    return () => {
+      if (objectUrl) {
+        URL.revokeObjectURL(objectUrl);
+      }
+    };
+  }, [product]);
+
   const handleBuyNow = () => {
     setLoadingBuy(true);
-    // Simulate API or navigation delay
     setTimeout(() => {
       setLoadingBuy(false);
-      alert('Navigating to Buy Page...'); // You can navigate or call API here
+      alert('Navigating to Buy Page...');
     }, 2000);
   };
 
@@ -32,13 +56,12 @@ const ProductDetails = () => {
       <div className="product-details">
         <div className="details-left">
           <img
-            src={product.imageUrls[0]}
+            src={product?.imageUrls?.[0]}
             alt={product.name}
             className="main-image"
-            onError={(e) => e.target.style.display = 'none'}
           />
           <div className="image-gallery">
-            {product.imageUrls.map((url, index) => (
+            {product?.imageUrls?.slice(0, 4).map((url, index) => (
               <img key={index} src={url} alt={`preview-${index}`} />
             ))}
           </div>

@@ -4,13 +4,11 @@ server:
 spring:
     application:
         name: advisory-service
-    data:
-        mongodb:
-            uri: mongodb://localhost:27017/agrolink_advisory
+
     config:
         import: configserver:http://localhost:8090
     profiles:
-        active:
+        active: prod
 
 management:
     endpoints:

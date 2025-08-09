@@ -5,11 +5,7 @@ spring:
     application:
         name: admin-service
 
-    data:
-        mongodb:
-            uri: mongodb://localhost:27017/admin-service-db
-
     config:
         import: configserver:http://localhost:8090
     profiles:
-        active:
+        active: prod

@@ -6,16 +6,10 @@ server:
 spring:
   application:
     name: notification-service
-  # MongoDB Config
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/agrolink_notification
-  # Mail Config (example with Gmail SMTP)
-
   config:
     import: configserver:http://localhost:8090
   profiles:
-    active:
+    active: prod
   mail:
     host: smtp.gmail.com
     port: 587

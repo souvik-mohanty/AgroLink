@@ -19,6 +19,13 @@ export const getProductById = async (id) => {
   return API.get(`/${id}`); // ✅ fixed
 };
 
+export const getProductImgById = async (id) => {
+  // Path should be '/photos/' and responseType must be 'blob'
+  return API.get(`/photo/${id}`, {
+    responseType: 'blob',
+  });
+};
+
 // Get cart for a user
 export const getCart = async () => {
   const userId = await getUserid();

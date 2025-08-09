@@ -21,7 +21,7 @@ public class Product {
     private String category;
     private Double pricePerUnit;
     private Integer quantityAvailable;
-    private List<String> imageUrls;
+    private List<String> photoIds;
     private String qualityTag;
     private String cropInfo;
 }

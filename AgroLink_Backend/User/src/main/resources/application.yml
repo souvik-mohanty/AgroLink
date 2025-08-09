@@ -6,11 +6,8 @@ spring:
   config:
     import: configserver:http://localhost:8090
   profiles:
-    active:
+    active: prod
 
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/agrolink
 
 server:
   port: 8081

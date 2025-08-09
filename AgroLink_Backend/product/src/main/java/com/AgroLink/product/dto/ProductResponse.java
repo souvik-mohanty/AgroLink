@@ -13,7 +13,7 @@ public class ProductResponse {
     private String category;
     private double pricePerUnit;
     private int quantityAvailable;
-    private List<String> imageUrls;
+    private List<String> photoIds;
     private String qualityTag;
     private String cropInfo;
 }

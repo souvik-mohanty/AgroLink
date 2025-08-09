@@ -9,25 +9,27 @@ const ProductCard = ({ product, onAddToCart, onBuyNow }) => {
     navigate(`/products/${product.id}`);
   };
 
-
   return (
     <div className="product-card" onClick={handleCardClick}>
       <img
         className="product-image"
         src={product.imageUrl || 'https://via.placeholder.com/300x200?text=No+Image'}
         alt={product.name}
+        onError={(e) => { e.target.src = 'https://placehold.co/300x200/555/white?text=No+Image'; }}
       />
       <div className="product-details">
-        <h3 className="product-title">{product.name}</h3>
-        <p className="product-description">{product.description}</p>
-        <p className="product-price">
-          ₹{product.pricePerUnit} <span className="unit-label">/Unit</span>
-        </p>
+        <div className="product-info">
+          <h3 className="product-title">{product.name}</h3>
+        </div>
+        <div>
+          <p className="product-price">
+            ₹{product.pricePerUnit} <span className="unit-label">/ Unit</span>
+          </p>
 
-
-        <div className="product-actions" onClick={e => e.stopPropagation()}>
-          <button className="btn add-cart" onClick={() => onAddToCart(product)}>Add to Cart</button>
-          <button className="btn buy-now" onClick={() => onBuyNow(product)}>Buy Now</button>
+          <div className="product-actions" onClick={e => e.stopPropagation()}>
+            <button className="btn add-cart" onClick={() => onAddToCart(product)}>Add to Cart</button>
+            <button className="btn buy-now" onClick={() => onBuyNow(product)}>Buy Now</button>
+          </div>
         </div>
       </div>
     </div>
