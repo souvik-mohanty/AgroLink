@@ -10,7 +10,29 @@ spring:
     active: prod
 
 management:
-  endpoint:
-    web:
-        exposure:
-            include: health
+  health:
+    circuitbreakers:
+      enabled: true
+
+
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      productServiceCircuitBreaker:
+        registerHealthIndicator: true
+        eventConsumerBufferSize: 10
+        failureRateThreshold: 50
+        minimumNumberOfCalls: 5
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 6s
+        permittedNumberOfCallsInHalfOpenState: 3
+        slidingWindowSize: 10
+        slidingWindowType: COUNT_BASED
+
+  ratelimiter:
+    instances:
+      productServiceRateLimiter:
+        limitForPeriod: 2
+        limitRefreshPeriod: 4s
+        timeoutDuration: 2s

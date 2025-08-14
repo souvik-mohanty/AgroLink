@@ -18,4 +18,5 @@ public class CartResponse {
     private String userId;
     private List<CartItem> items = new ArrayList<>();
     private double total;
+    private String message;
 }
