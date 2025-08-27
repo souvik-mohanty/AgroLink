@@ -89,6 +89,13 @@ public class UserService {
         }
     }
 
+    public boolean userExistsAndActive(String id) {
+        return userRepository.findById(id)
+                .map(user -> user.getRole() != null && user.getRole() != UserRole.SUSPENDED_USER)
+                .orElse(false);
+    }
+
+
 
     private UserProfileDTO convertToDto(User user) {
         UserProfileDTO dto = new UserProfileDTO();

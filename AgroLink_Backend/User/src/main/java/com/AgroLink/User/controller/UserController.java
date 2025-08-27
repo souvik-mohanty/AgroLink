@@ -38,6 +38,12 @@ public class UserController {
                 .orElseThrow(() -> new UserNotFoundException(id));
     }
 
+    @GetMapping("/{id}/exists")
+    public boolean userExistsAndActive(@PathVariable String id) {
+        return userService.userExistsAndActive(id);
+    }
+
+
     // sourav :- This endpoint is used to update user details.
     @PutMapping("/{id}")
     @PreAuthorize("@authUtil.isUserOrAdmin(#id)")
